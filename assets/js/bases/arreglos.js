@@ -18,3 +18,4 @@ let arregloCosas =[
 ];
 
 console.log(arregloCosas[7][4][1]);
+
