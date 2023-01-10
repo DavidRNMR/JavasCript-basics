@@ -1,0 +1,44 @@
+<!-- 5. Crea una página HTML con un formulario con los siguientes elementos:
+◦ 4 checkbox:
+▪ Pregunte al usuario si come al día fruta 2 veces o más.
+▪ Pregunte al usuario si come al día verdura 2 veces o más.
+▪ Pregunte al usuario si come a la semana legumbres 3 veces o más.
+▪ Pregunte al usuario si hace deporte a la semana 3 veces o más.
+◦ Un botón llamado “Vida sana” que marque todos los checkbox del formulario (utiliza 
+elements[])
+◦ Un botón llamado “Vida insana” que desmarque todos los checkbox del formulario 
+(utiliza elements[]) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    <form name="datos_salud" id="datos_salud">
+
+        <label for="fruta">¿Comes fruta 2 veces o más</label>
+        <input type="checkbox" id="fruta" name="fruta" value="fruta"><br>
+
+        <label for="verdura">comes verdura 2 veces o mas?</label>
+        <input type="checkbox" id="verdura" name="verdura" value="verdura"><br>
+
+        <label for="legumbres">comes legumbres dos veces?</label>
+        <input type="checkbox" id="legumbres" name="legumbres" value="legumbres"><br>
+
+        <label for="deporte">haces deporte 2 veces?</label>
+        <input type="checkbox" id="deporte" name="deporte" value="deporte"><br>
+        
+        <input type="button" onclick="vidaSana()" value="vida sana"><br>
+        <input type="button" onclick="vidaInSana()" value="vida Insana">
+    </form>
+
+
+<script src="ej5.js"></script> 
+</body>
+</html>

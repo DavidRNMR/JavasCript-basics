@@ -1,0 +1,33 @@
+
+<!-- Crea un botón que al pulsarlo indique:
+a) El número de elementos del formulario. Utiliza la propiedad elements[]del 
+formulario
+b) El atributo checked y defaultChecked de todos los elementos checkbox del 
+formulario. Utiliza la propiedad elements[] -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p id="demo"></p>
+
+<form id ="formulario">
+    <input type="checkbox" id="c_madrid" name="c_madrid" value="Madrid">
+    <label for="c_madrid">Madrid</label><br>
+    <input type="checkbox" id="c_sevilla" name="c_sevilla" value="Sevilla" checked>
+    <label for="c_sevilla">Sevilla</label><br>
+    <input type="checkbox" id="c_cuenca" name="c_cuenca" value="Cuenca" checked>
+    <label for="c_cuenca">Cuenca</label><br>
+    <input type="button" onclick="valores()" value="Checked y defaultChecked"><br>
+</form>
+
+<script src ="ej1.js"></script>
+</body>
+</html>

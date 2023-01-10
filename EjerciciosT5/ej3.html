@@ -1,0 +1,32 @@
+<!-- Crea un botón que al pulsarlo indique:
+a) El número de elementos del radio button que aparece en el formulario. No utilizar la 
+propiedad elements[] del formulario
+b) El atributo checked y defaultChecked de todos los elementos radioButton del 
+formulario. No utilizar la propiedad elements[] del formulario
+c) El valor del radio button seleccionado -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form id="formulario">
+    <p id="demo"></p>
+    <input type="radio" id="c_madrid" name="ciudad" value="Madrid">
+    <label for="c_madrid">Madrid</label><br>
+    <input type="radio" id="c_sevilla" name="ciudad" value="Sevilla" checked>
+    <label for="c_sevilla">Sevilla</label><br>
+    <input type="radio" id="c_cuenca" name="ciudad" value="Cuenca">
+    <label for="c_cuenca">Cuenca</label><br>
+    <input type="button" onclick="numElem()" value="numElem"><br>
+</form>
+
+
+<script src="ej3.js"></script>
+</body>
+</html>
