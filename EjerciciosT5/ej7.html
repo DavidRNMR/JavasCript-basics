@@ -1,0 +1,60 @@
+<!-- 7. Crea una página HTML con un formulario con los siguientes elementos:
+◦ 4 checkbox:
+▪ Pregunte al usuario si come al día fruta 2 veces o más.
+▪ Pregunte al usuario si come al día verdura 2 veces o más.
+▪ Pregunte al usuario si come a la semana legumbres 3 veces o más.
+▪ Pregunte al usuario si hace deporte a la semana 3 veces o más.
+◦ 3 radio-button:
+▪ Vida sana.
+▪ Vida un poco insana.
+▪ Vida insana.
+◦ Un botón llamado “Consultar tipo de vida” que marque el radio button “Vida sana” si la 
+persona ha marcado, 3 ó 4 checkbox. Que marque el radio-button “Vida un poco insana”
+si la persona ha marcado 2 checkbox. Y que marque el radio-button “Vida insana” si la 
+persona no ha marcada ningún checkbox o solo ha marcado 1. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form name="datos_salud" id="datos_salud">
+
+    <label for="fruta">Comes fruta 2 veces?</label>
+    <input type="checkbox" id="fruta" name="fruta" value="fruta"><br>
+
+    <label for="verdura">Comes verdura 2 veces?</label>
+    <input type="checkbox" id="verdura" name="verdura" value="verdura"><br>
+
+    <label for="legumbres">legumbres 3 veces?</label>
+    <input type="checkbox" id="legumbres" name="legumbres" value="legumbres"><br>
+
+    <label for="deporte">deporte 3 veces?</label>
+    <input type="checkbox" name="deporte" id="deporte" value="deporte"><br><br>
+
+    <label for="sana">Vida Sana</label>
+    <input type="radio" id="sana" name="salud" value="sana"><br>
+
+    <label for="pocosana">Vida Poco Sana</label>
+    <input type="radio" id="pocosana" name="salud" value="pocosana"><br>
+
+    <label for="insana">Vida insana</label>
+    <input type="radio" id="insana" name="salud" value="insana"><br>
+
+    <input type="button" value="Consultar tipo de Vida" onclick="consultarVida()" id="consultar">
+
+
+
+
+</form>
+
+
+
+</form>
+<script src="ej7.js"></script>    
+</body>
+</html>
