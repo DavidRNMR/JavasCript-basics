@@ -1,0 +1,36 @@
+<!-- 8. A) Crea una página HTML con lo siguiente:
+1. Un elemento select para elegir entre las 2 provincias de Extremadura.
+2. Un botón llamado “Provincia” que al pulsarlo te salga en un encabezado de la página 
+web qué provincia ha sido seleccionada por el usuario. 
+Utiliza para ello el elemento options del objeto select, y la propiedad selectedIndex.
+B) Igual que en el apartado A) pero permitiendo selección múltiple -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <p id="info"></p>
+    <form id="formulario">
+
+        <label for="provincias">Seleccione provincia</label>
+        <select name="provincias" id="provincias">
+
+        <option value="C">La Coruña</option>
+        <option value="LU">Lugo</option>
+        <option value="OU">Ourense</option>
+        <option value="PO">Pontevedra</option>
+        </select><br>
+
+        <label for="opcion">Selecciona una opcion</label>
+        <input type="button" value="Consultar informacion" onclick="consultar()">
+
+    </form>
+    
+<script src="ej8A.js"></script>    
+</body>
+</html>
